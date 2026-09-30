@@ -13,11 +13,11 @@ The system does not require a Wi-Fi router or connection to the venue's Wi-Fi ne
 - PROGRAM tally — red
 - PREVIEW tally — green
 - NeoPixel LED output on each receiver
-- 240×240 ST7789 color display on the master
-- Master display shows PGM/PVW state for each camera
+- 240×240 ST7789 color display on the 
+-  display shows PGM/PVW state for each camera
 - Receiver ONLINE/OFFLINE indication
 - Automatic receiver fail-safe
-- Periodic heartbeat from the master
+- Periodic heartbeat from the 
 - USB/Serial connection between vMix PC and the master
 - Designed for ESP8266 / WeMos D1 Mini
 
@@ -302,10 +302,10 @@ The online indicator can be updated independently without redrawing the complete
 ```text
 vmix-espnow-tally/
 |
-+-- master/
++-- src/
 |   +-- master.ino
 |
-+-- receiver/
++-- src/
 |   +-- receiver.ino
 |
 +-- README.md
@@ -313,7 +313,7 @@ vmix-espnow-tally/
 +-- LICENSE
 ```
 
-The same receiver firmware can be used for all cameras by changing `CAMERA_NUMBER`, `Act`, and `Pre`.
+The same receiver firmware can be used for all cameras by changing only `CAMERA_NUMBER`.
 
 ## Notes
 
@@ -343,7 +343,7 @@ Before configuring the master, you need to find the Wi-Fi MAC address of each ES
 A simple utility sketch is included in:
 
 ```text
-tools/get_mac_address/get_mac_address.ino
+tools/src/get_mac_address.ino
 ```
 
 Upload this sketch to the ESP8266 / WeMos D1 Mini and open the Arduino Serial Monitor at **115200 baud**.
