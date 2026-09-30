@@ -91,7 +91,7 @@ The tested ST7789 module uses SPI and does not require a CS connection.
 | BLK | 3V3 |
 
 <p align="center">
-  <img src="src/schema.jpg" width="500">
+  <img src="src/schema.png" width="500">
   <br>
   <em>schema</em>
 </p>
