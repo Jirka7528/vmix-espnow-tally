@@ -90,6 +90,12 @@ The tested ST7789 module uses SPI and does not require a CS connection.
 | DC | D1 / GPIO5 |
 | BLK | 3V3 |
 
+<p align="center">
+  <img src="src/schema.jpg" width="500">
+  <br>
+  <em>schema</em>
+</p>
+
 The display is initialized as:
 
 ```cpp
