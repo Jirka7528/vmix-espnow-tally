@@ -336,6 +336,51 @@ Tested with:
 - 4 camera receivers
 - bidirectional master/receiver communication
 
+## Finding Receiver MAC Addresses
+
+Before configuring the master, you need to find the Wi-Fi MAC address of each ESP8266 receiver.
+
+A simple utility sketch is included in:
+
+```text
+tools/get_mac_address/get_mac_address.ino
+```
+
+Upload this sketch to the ESP8266 / WeMos D1 Mini and open the Arduino Serial Monitor at **115200 baud**.
+
+Example output:
+
+```text
+====================
+ESP8266 MAC ADDRESS
+====================
+MAC: CC:50:E3:16:39:01
+====================
+```
+
+Repeat this for every receiver and write down which MAC address belongs to each camera.
+
+For example:
+
+```text
+CAM1 = 8C:CE:4E:CE:4D:82
+CAM2 = E0:98:06:14:9A:73
+CAM3 = E0:98:06:13:A4:A1
+CAM4 = CC:50:E3:16:39:01
+```
+
+Then convert the addresses to the format used in `master.ino`:
+
+```cpp
+uint8_t peer1[] = {0x8C, 0xCE, 0x4E, 0xCE, 0x4D, 0x82};
+uint8_t peer2[] = {0xE0, 0x98, 0x06, 0x14, 0x9A, 0x73};
+uint8_t peer3[] = {0xE0, 0x98, 0x06, 0x13, 0xA4, 0xA1};
+uint8_t peer4[] = {0xCC, 0x50, 0xE3, 0x16, 0x39, 0x01};
+```
+
+These addresses tell the master which ESP-NOW receivers should receive the tally data.
+
+
 ## License
 
 Choose a license appropriate for your project before publishing.
