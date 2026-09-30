@@ -389,8 +389,7 @@ These addresses tell the master which ESP-NOW receivers should receive the tally
 
 ## License
 
-Choose a license appropriate for your project before publishing.
+This project is licensed under the MIT License.
 
-For a simple open-source hardware/software project, the MIT License is one possible option for the software.
+See the [LICENSE](LICENSE) file for details.
 
-Hardware documentation can optionally be licensed separately.
