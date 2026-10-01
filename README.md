@@ -39,23 +39,16 @@ The system does not require a Wi-Fi router or connection to the venue's Wi-Fi ne
                                       |
                                   ESP-NOW
                                       |
-                 +--------------------+--------------------+
-                 |                    |                    |
-                 v                    v                    v
-          +-------------+      +-------------+      +-------------+
-          | CAM 1       |      | CAM 2       |      | CAM 3       |
-          | ESP8266     |      | ESP8266     |      | ESP8266     |
-          | NeoPixel    |      | NeoPixel    |      | NeoPixel    |
-          +-------------+      +-------------+      +-------------+
+                 +--------------------+--------------------+--------------------+
+                 |                    |                    |                    |
+                 v                    v                    v                    v
+          +-------------+      +-------------+      +-------------+      +-------------+
+          | CAM 1       |      | CAM 2       |      | CAM 3       |      | CAM 4       |
+          | ESP8266     |      | ESP8266     |      | ESP8266     |      | ESP8266     |
+          | NeoPixel    |      | NeoPixel    |      | NeoPixel    |      | NeoPixel    |
+          +-------------+      +-------------+      +-------------+      +-------------+
 
-                                      |
-                                      v
-
-                               +-------------+
-                               | CAM 4       |
-                               | ESP8266     |
-                               | NeoPixel    |
-                               +-------------+
+                            
 ```
 
 Each receiver sends a periodic acknowledgement back to the master. The master uses these acknowledgements to show whether each camera receiver is currently online.
