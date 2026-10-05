@@ -382,6 +382,18 @@ uint8_t peer4[] = {0xCC, 0x50, 0xE3, 0x16, 0x39, 0x01};
 
 These addresses tell the master which ESP-NOW receivers should receive the tally data.
 
+<p align="center">
+  <img src="src/20261005_095817.jpg" width="500">
+  <br>
+  <em>schema</em>
+</p>
+
+
+<p align="center">
+  <img src="src/20261005_095825.jpg" width="500">
+  <br>
+  <em>schema</em>
+</p>
 
 ## License
 
