@@ -385,14 +385,14 @@ These addresses tell the master which ESP-NOW receivers should receive the tally
 <p align="center">
   <img src="src/20261005_095817.jpg" width="500">
   <br>
-  <em>schema</em>
+  <em>master</em>
 </p>
 
 
 <p align="center">
   <img src="src/20261005_095825.jpg" width="500">
   <br>
-  <em>schema</em>
+  <em>transmitter and receivers</em>
 </p>
 
 ## License
